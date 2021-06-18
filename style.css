@@ -1,0 +1,68 @@
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;/*whatever width and height is given only that will be used */
+
+}
+
+body
+{
+    height: 100vh; /* vh 1% of viewport height */
+    background: burlywood;
+ display: flex;
+}
+
+.memory-game
+{
+    width: 640px;
+    height: 640px;
+    /*border: 2px solid lime;*/
+    display: flex;/*equally spaced one and only row and strtch to the full capacity */
+    /*flex-wrap : no wrap means all content must be one single row */
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+}
+.memory-card
+{
+    width: calc(25% - 10px);
+    height: cal(33.333% - 10px);
+    /*border: 2px solid aqua;*/
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: tranform .5s;
+}
+.memory-card:active{
+    transform: scale(.97);
+    transition: transform .2s;
+    
+}
+.memory-card.flip
+{
+    transform: rotateY(180deg);
+}
+/* a position that is absolute is relative to the parent that it has */
+.front-face,.back-face
+{
+    width: 100%;/*100% of the parent*/
+    height:100%;/*100% of the parent */
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+    /*border:2px solid deeppink;*/
+    background:black;/* as images are inline elements they dont get affected much */
+    backface-visibility: hidden;
+}
+
+/* if we just keep backface visibility as hidden then we are going to have the backface hidden but as we have kept front face hidden we need to display that*/  
+img
+{
+    width: 100px;
+}
+.front-face
+{
+    transform: rotateY(180deg);
+}

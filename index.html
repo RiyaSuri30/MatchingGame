@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="memory-game">
+
+<!--1-->
+<!--data-* helps in the creation of a custom attribute for private use that we can be using -->
+    <div class="memory-card" data-framework="Pizza" id="card1">
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=714&q=80" alt="Pizza" class="front-face" />
+    <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+   
+    </div>
+
+<!--2-->
+    <div class="memory-card" data-framework="Burger" id="card2">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Burger"  class="front-face" />
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+        
+    </div>
+<!--3-->
+     <div class="memory-card" data-framework="Pasta" id="card3">
+        <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFzdGF8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pasta" class="front-face" />
+    <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+    
+    </div>
+<!--4-->
+    <div class="memory-card" data-framework="Cake" id="card4" >
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FrZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cake" class="front-face" />
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+        
+    </div>
+<!--5-->
+    <div class="memory-card" data-framework="Laptop" id="card5">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Laptop" class="front-face" />
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+        
+    </div>
+<!--6-->
+    <div class="memory-card" data-framework="Pancake" id="card6">
+        <img src="https://images.unsplash.com/flagged/photo-1557609786-fd36193db6e5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuY2FrZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pancake" class="front-face" >
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+        
+    </div>
+<!--7-->
+    <div class="memory-card" data-framework="Burger" id="card7">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Burger" class="front-face" >
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+      
+    </div>
+
+<!--8-->
+    <div class="memory-card" data-framework="Laptop" id="card8">
+        <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8bGFwdG9wfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Laptop" class="front-face" >
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+       
+    </div>
+
+<!--9-->
+    <div class="memory-card" data-framework="Pasta" id="card9">
+        <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8cGFzdGF8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pasta" class="front-face" >
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+       
+    </div>
+<!--10-->
+    <div class="memory-card" data-framework="Cake" id="card10">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FrZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cake" class="front-face" />
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+        
+    </div>
+<!--11-->
+    <div class="memory-card" data-framework="Pancake" id="card11">
+        <img src="https://images.unsplash.com/flagged/photo-1557609786-fd36193db6e5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFuY2FrZXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pancake" class="front-face" />
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+        
+    </div>
+<!--12-->
+    <div class="memory-card" data-framework="Pizza" id="card12">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=714&q=80" alt="Pizza" class="front-face" />
+        <img src="https://images.unsplash.com/photo-1504478855730-6d32c20fa165?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8YWJzdGFyY3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Canopy" class="back-face"/>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
